@@ -28,9 +28,9 @@ jobs:
       run: |
         npm run test
 
-    - name: Build & Package
+    - name: Build
       run: |
-        npm run build && npm run package
+        npm run build
 
   publish:
     needs: build
