@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "test": "mocha --trace-warnings --exit -r ts-node/register src/**/*.spec.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/chai": "^4.2.12",
