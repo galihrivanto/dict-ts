@@ -24,6 +24,10 @@ jobs:
       run: |
         npm ci
 
+    - name: Run test
+      run: |
+        npm run test
+
     - name: Build & Package
       run: |
         npm run build && npm run package
